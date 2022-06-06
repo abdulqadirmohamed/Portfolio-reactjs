@@ -17,7 +17,7 @@ const Profile = () => {
                         Tailwindcss and more.</p>
                 </div>
                 <div className='my-8'>
-                    <a className='bg-[#481261] py-3 px-5 rounded' href="mailto:cajiibxaaji02@gmail.com">Work with me</a>
+                    <a className='btn' href="mailto:cajiibxaaji02@gmail.com">Work with me</a>
                 </div>
             </div>
             {/* Contact */}

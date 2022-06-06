@@ -2,25 +2,17 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import Profile from './Profile'
 import Projects from './Projects'
-import { db } from "../firebase";
-import {getDocs, collection} from '../firebase/firestore'
+
 
 const Home = () => {
   const [users, setUsers] = useState([])
-  const usersCollectionRef = collection(db, "projects");
 
-  useEffect(()=>{
-    const getUsers = async () => {
-      const data = await getDocs(usersCollectionRef);
-      setUsers(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-      console.log(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-    };
-getUsers();
-  },[])
+
+
 
 
   return (
-    <div className='w-[80%] mx-auto'>
+    <div className='md:w-[80%] w-[90%] mx-auto pb-10 pt-5'>
         <Profile/>
         <Projects/>
     </div>
