@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import Admin from './components/Admin';
 import { Routes, Route} from "react-router-dom";
+import Test from './components/Test';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' exact element={ <Home/>} />
         <Route path='/admin' element={<Admin/>}/>
+        <Route path='/test' element={<Test/>}/>
       </Routes>
      
     </div>

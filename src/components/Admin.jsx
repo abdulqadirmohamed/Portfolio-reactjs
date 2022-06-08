@@ -22,7 +22,6 @@ const Admin = () => {
                 github: repo,
                 tags: tags
             });
-        setTitle('')
     }
 
   return (
