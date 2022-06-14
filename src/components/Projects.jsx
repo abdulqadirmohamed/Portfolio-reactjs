@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import { db } from "../firebase";
 import { getDocs, collection, doc } from "firebase/firestore";
 import { async } from "@firebase/util";
-import Test from "./Test";
+import Loading from "./Loading";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -30,7 +30,6 @@ const Projects = () => {
       {/* cards */}
       {isLoading ? (
         <motion.div
-          animate={{ y: 100 }}
           className="mt-8 md:grid grid-cols-3 md:gap-6"
         >
           {projects.map((project) => (
@@ -46,7 +45,7 @@ const Projects = () => {
         </motion.div>
       ) : (
         <div className="mt-8 md:grid grid-cols-3 md:gap-6">
-          <Test />
+          <Loading />
         </div>
       )}
     </div>
