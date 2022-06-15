@@ -46,6 +46,7 @@ const Projects = () => {
       ) : (
         <div className="mt-8 md:grid grid-cols-3 md:gap-6">
           <Loading />
+          <Loading />
         </div>
       )}
     </div>

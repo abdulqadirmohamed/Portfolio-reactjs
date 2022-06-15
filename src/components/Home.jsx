@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className='md:w-[80%] w-[90%] mx-auto pb-10 pt-5'>
         <Profile/>
-        <Skill/>
+        {/* <Skill/> */}
         <Projects/>
     </div>
   )

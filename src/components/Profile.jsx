@@ -4,7 +4,6 @@ import { FaLinkedinIn } from 'react-icons/fa'
 import { FiCodepen } from 'react-icons/fi'
 
 const Profile = () => {
-
     return (
         <div className='md:grid grid-cols-4 gap-8 pt-8'>
             {/* Info */}
@@ -24,10 +23,10 @@ const Profile = () => {
             <div className=''>
                 <h1 className='text-2xl font-medium'>Contact Me</h1>
                 <div className='flex gap-4 my-2'>
-                    <a href="#"><AiOutlineTwitter size={20} /></a>
-                    <a href="#"> <FaLinkedinIn size={20} /></a>
-                    <a href="#"> <FiCodepen size={20} /></a>
-                    <a href="#"><AiFillGithub size={20} /></a>
+                    <a href="https://twitter.com/abdulqadir_mj" target="_blank"><AiOutlineTwitter size={20} /></a>
+                    <a href="https://www.linkedin.com/in/abdulqadir-mohamed-572093178/" target="_blank"> <FaLinkedinIn size={20} /></a>
+                    <a href="https://codepen.io/abdulqadir876" arget="_blank"> <FiCodepen size={20}/></a>
+                    <a href="https://github.com/abdulqadir876" target="_blank"><AiFillGithub size={20} /></a>
                 </div>
             </div>
         </div>
